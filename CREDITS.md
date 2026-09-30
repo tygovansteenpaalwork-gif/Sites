@@ -22,7 +22,6 @@ as each original.
 The paper texture in `assets/img/paper/` is generated for this site. The ZetFire logo is Tygo's own.
 
 Fonts: [IM Fell DW Pica SC](https://fonts.google.com/specimen/IM+Fell+DW+Pica+SC), [IM Fell English](https://fonts.google.com/specimen/IM+Fell+English)
-and [Alegreya SC](https://fonts.google.com/specimen/Alegreya+SC) for v. II; [Onest](https://fonts.google.com/specimen/Onest) and
-[DM Mono](https://fonts.google.com/specimen/DM+Mono) for v. I. All SIL Open Font License, served by Google Fonts.
+and [Alegreya SC](https://fonts.google.com/specimen/Alegreya+SC), SIL Open Font License, served by Google Fonts.
 
-Layout of v. II follows [lynnandtonic.com](https://lynnandtonic.com) by Lynn Fisher.
+The layout follows [lynnandtonic.com](https://lynnandtonic.com) by Lynn Fisher.
