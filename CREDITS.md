@@ -19,5 +19,5 @@ as each original.
 | Method, scan | `assets/img/porsche-interior-*` | Porsche 356 A Speedster 1600 Super 1X7A7865 | Alexander Migl | CC BY-SA 4.0 | https://commons.wikimedia.org/w/index.php?curid=67853706 |
 | Collection 01 | `assets/img/blenheim-*` | Blenheim Palace from the Water Terraces October 2016 | DeFacto | CC BY-SA 4.0 | https://commons.wikimedia.org/w/index.php?curid=52165842 |
 
-Fonts: [Cormorant](https://fonts.google.com/specimen/Cormorant) and [DM Mono](https://fonts.google.com/specimen/DM+Mono),
+Fonts: [Onest](https://fonts.google.com/specimen/Onest) and [DM Mono](https://fonts.google.com/specimen/DM+Mono),
 both SIL Open Font License, served by Google Fonts.
