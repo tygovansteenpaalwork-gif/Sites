@@ -213,3 +213,6 @@ hr { height: 1px; margin: 2rem 0; background: var(--light-color); border: 0; }
 @media (max-width: 350px) { .main-footer .footer-links { flex-direction: column; } }
 
 @media (prefers-reduced-motion: reduce) { .app, .main-nav a, .toggle-icon, .icon { transition: none; } }
+
+.links.credits li { align-items: baseline; gap: 1.5em; }
+.links.credits .date { max-width: 45%; white-space: normal; font-size: var(--font-xs); }
