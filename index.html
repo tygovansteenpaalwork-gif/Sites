@@ -4,221 +4,216 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Tygo Vansteenpaal</title>
-  <meta name="description" content="Tygo Vansteenpaal (ZetFire), eighteen, from Rotterdam. Developer and third-year student at the Grafisch Lyceum Rotterdam, building security tools, Roblox systems and websites.">
+  <meta name="description" content="Tygo Vansteenpaal (ZetFire), developer from Rotterdam. Third-year student at the Grafisch Lyceum Rotterdam, building security tools, Roblox systems and websites.">
   <meta name="theme-color" content="#0e0e0e">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%230e0e0e'/%3E%3Ctext x='32' y='42' font-family='Arial,sans-serif' font-size='26' text-anchor='middle' fill='%23f2f2f2'%3ETV%3C/text%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Onest:wght@300;400;500&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/site.css">
-  <script>document.documentElement.classList.add('js');if(!matchMedia('(prefers-reduced-motion: reduce)').matches)document.documentElement.classList.add('scenes','is-loading');</script>
-  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js" defer></script>
+  <script>document.documentElement.classList.add('js');if(!matchMedia('(prefers-reduced-motion: reduce)').matches)document.documentElement.classList.add('scenes');</script>
   <script src="assets/js/site.js" defer></script>
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
 
-  <!-- Loader: counter and name, then the page opens -->
-  <div class="loader" aria-hidden="true" data-loader>
-    <p class="loader__name">TYGO VANSTEENPAAL</p>
-    <p class="loader__count"><span data-count>000</span></p>
-    <p class="loader__line"><span data-bar></span></p>
-  </div>
-
-  <!-- Cursor: a small square that grows into a label over projects -->
-  <div class="cursor" aria-hidden="true" data-cursor><span data-cursor-label>View</span></div>
-  <!-- Photo that follows the pointer over the project index -->
-  <div class="peek" aria-hidden="true" data-peek><img alt="" data-peek-img></div>
-
-  <header class="nav" data-nav>
+  <nav class="nav" aria-label="Main" data-nav>
     <a class="nav__logo" href="#top" aria-label="Tygo Vansteenpaal, back to top">VANSTEENPAAL</a>
-    <button class="nav__menu" type="button" aria-expanded="false" aria-controls="nav-links" data-menu>[ Menu ]</button>
-    <ul class="nav__links" id="nav-links" data-links>
-      <li><a href="#about">[ About ]</a></li>
-      <li><a href="#work">[ Work ]</a></li>
-      <li><a href="#skills">[ Skills ]</a></li>
-      <li><a href="#contact">[ Contact ]</a></li>
+    <div class="nav__right">
+      <a class="nav__link" href="#work">[ WORK ]</a>
+      <a class="nav__link" href="#about">[ ABOUT ]</a>
+      <a class="nav__link" href="#contact">[ CONTACT ]</a>
+      <button class="nav__link nav__menu" type="button" aria-expanded="false" aria-controls="menu" data-menu>[ MENU ]</button>
+    </div>
+  </nav>
+
+  <div class="menu" id="menu" data-menu-panel hidden>
+    <ul>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contribute">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
     </ul>
-  </header>
+  </div>
 
   <main id="main">
 
-    <!-- Hero: headline stays, the photograph assembles from tiles and opens up -->
+    <!-- hero-section -->
     <section class="hero" id="top" data-hero>
       <div class="hero__sticky">
-        <p class="hero__mark" aria-hidden="true" data-mark><span>VANSTEENPAAL</span></p>
-        <div class="hero__copy">
-          <h1 class="hero__title" data-lines><span>Eighteen, from Rotterdam,</span><span>building what I want to understand.</span></h1>
-          <p class="hero__note">I'm Tygo, online ZetFire. Third-year student at the Grafisch Lyceum Rotterdam, working on security tools, Roblox systems and websites.</p>
+        <p class="hero__mark" aria-hidden="true" data-mark>VANSTEENPAAL</p>
+        <div class="hero__copy" data-copy>
+          <h1 class="hero__title">Tygo Vansteenpaal,<br>developer from Rotterdam.</h1>
+          <p class="hero__note">Eighteen, third year at the Grafisch Lyceum Rotterdam. Online as ZetFire. I build security tools, Roblox systems and websites.</p>
         </div>
-        <p class="hero__hint" data-hint>Scroll</p>
         <div class="hero__frame" data-frame>
           <div class="hero__tiles" data-tiles aria-hidden="true"></div>
-          <img class="hero__image" src="assets/img/rolls-royce-1920.jpg" width="1920" height="1259"
-               alt="A pale blue Rolls-Royce Silver Cloud parked on gravel in front of an ivy-covered brick house.">
+          <img class="hero__image" src="assets/img/rolls-royce-1920.jpg" width="1920" height="1259" alt="A pale blue Rolls-Royce Silver Cloud parked on gravel in front of an ivy-covered brick house.">
           <div class="hero__over" data-over>
-            <p class="hero__over-left">Tygo Vansteenpaal<br>Developer, Rotterdam</p>
+            <p class="hero__over-left">I turn questions<br>into working tools.</p>
             <p class="hero__over-mark">VANSTEENPAAL</p>
-            <ul class="hero__over-right"><li>Security</li><li>Roblox systems</li><li>Web</li></ul>
+            <ul class="hero__over-right"><li>Security</li><li>Roblox systems</li><li>Web design</li><li>Development</li></ul>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- About: who I am, in numbers and in one long sentence -->
-    <section class="about" id="about" aria-labelledby="about-title">
-      <div class="about__grid">
-        <p class="about__label">[ About ]</p>
-        <h2 class="about__title" id="about-title" data-lines><span>Hi, I'm Tygo.</span></h2>
-        <p class="about__text" data-light>I'm eighteen and in my third year at the Grafisch Lyceum Rotterdam. I spend most of my time on programming, on cybersecurity, and on software that makes everyday things a little easier. I learn by building real projects and publishing the source, so anyone can read how they work.</p>
-        <figure class="about__photo" data-parallax>
-          <img src="assets/img/polo-1000.jpg" width="836" height="1024" loading="lazy" decoding="async" alt="A polo player in white leans out of the saddle at full gallop.">
-        </figure>
-      </div>
-      <dl class="about__stats">
-        <div><dt>Age</dt><dd><span data-count-to="18">0</span></dd></div>
-        <div><dt>Year at GLR</dt><dd><span data-count-to="3">0</span><small>rd</small></dd></div>
-        <div><dt>Tools in use</dt><dd><span data-count-to="12">0</span><small>+</small></dd></div>
-        <div><dt>Based in</dt><dd class="about__city">Rotterdam</dd></div>
-      </dl>
-    </section>
-
-    <!-- Selected work -->
-    <section class="work" id="work" aria-labelledby="work-title">
-      <div class="work__head">
-        <h2 class="work__title" id="work-title" data-blur>Selected<br>work</h2>
-        <a class="link-caps" href="https://github.com/tygovansteenpaalwork-gif">All projects on GitHub</a>
+    <!-- project-section -->
+    <section class="projects" id="work" aria-labelledby="projects-title">
+      <div class="projects__head">
+        <h2 class="projects__title" id="projects-title" data-blur>Selected<br>projects</h2>
+        <a class="underline" href="https://github.com/tygovansteenpaalwork-gif">VIEW ALL WORKS</a>
       </div>
 
-      <div class="work__grid">
-        <article class="card card--a">
-          <a class="card__media" href="https://github.com/tygovansteenpaalwork-gif/Projects/tree/main/ember" data-cursor-text="View">
-            <img src="assets/img/mercedes-300sl-1000.jpg" srcset="assets/img/mercedes-300sl-1000.webp 1000w, assets/img/mercedes-300sl-1920.webp 1920w" sizes="(min-width: 48em) 50vw, 100vw" width="1000" height="667" loading="lazy" decoding="async" alt="A silver Mercedes-Benz 300 SL roadster parked on cobblestones in front of a stone house.">
-            <ul class="card__tags"><li>Security</li><li>Python</li><li>CLI</li></ul>
+      <div class="projects__grid">
+        <article class="project project--big project--r1l">
+          <a class="project__media" href="https://github.com/tygovansteenpaalwork-gif/Projects/tree/main/ember">
+            <img src="assets/img/mercedes-300sl-1920.jpg" width="1920" height="1280" loading="lazy" decoding="async" alt="A silver Mercedes-Benz 300 SL roadster on cobblestones in front of a stone house.">
+            <ul class="project__tags"><li>Security</li><li>Python</li><li>GitHub Action</li></ul>
           </a>
-          <h3 class="card__title">Ember</h3>
-          <p class="card__desc">A scanner that finds backdoors hidden in Roblox free models, straight from the .rbxm file.</p>
+          <div class="project__info">
+            <h3 class="project__name">Ember</h3>
+            <p class="project__desc">Finds backdoors hidden in Roblox free models. Reads the model file itself, no Studio needed.</p>
+          </div>
         </article>
 
-        <article class="card card--b">
-          <a class="card__media" href="https://github.com/tygovansteenpaalwork-gif/AI_VOICE_JARVIS" data-cursor-text="View">
-            <img src="assets/img/riva-1000.jpg" srcset="assets/img/riva-1000.webp 1000w, assets/img/riva-1920.webp 1920w" sizes="(min-width: 48em) 30vw, 100vw" width="1000" height="750" loading="lazy" decoding="async" alt="A varnished wooden Riva Aquarama speedboat moored on a lake.">
-            <ul class="card__tags"><li>Voice AI</li><li>Python</li></ul>
+        <article class="project project--small project--r1r">
+          <a class="project__media" href="https://github.com/tygovansteenpaalwork-gif/AI_VOICE_JARVIS">
+            <img src="assets/img/riva-1000.jpg" width="1000" height="750" loading="lazy" decoding="async" alt="A varnished wooden Riva Aquarama speedboat moored on a lake.">
+            <ul class="project__tags"><li>Voice AI</li><li>Python</li></ul>
           </a>
-          <h3 class="card__title">Jarvis</h3>
-          <p class="card__desc">A spoken assistant that listens, answers out loud, and can search the web or save notes mid-conversation.</p>
+          <div class="project__info">
+            <h3 class="project__name">Jarvis</h3>
+            <p class="project__desc">A voice assistant that listens, talks back and can search the web.</p>
+          </div>
         </article>
 
-        <article class="card card--c">
-          <a class="card__media" href="https://github.com/tygovansteenpaalwork-gif/Roblox_lua_script" data-cursor-text="View">
-            <img src="assets/img/mercedes-pagode-1000.jpg" srcset="assets/img/mercedes-pagode-1000.webp 1000w, assets/img/mercedes-pagode-1920.webp 1920w" sizes="(min-width: 48em) 36vw, 100vw" width="1000" height="750" loading="lazy" decoding="async" alt="A white Mercedes-Benz 230 SL Pagode parked under trees.">
-            <ul class="card__tags"><li>Interface</li><li>Luau</li></ul>
+        <article class="project project--wide">
+          <a class="project__media" href="https://github.com/tygovansteenpaalwork-gif/Roblox_lua_script">
+            <img src="assets/img/mercedes-pagode-1920.jpg" width="1920" height="1440" loading="lazy" decoding="async" alt="A white Mercedes-Benz 230 SL Pagode parked under trees.">
+            <ul class="project__tags"><li>Interface</li><li>Luau</li><li>Roblox</li></ul>
           </a>
-          <h3 class="card__title">Terkan UI</h3>
-          <p class="card__desc">A dark-red interface library for Roblox with fifteen tabs, saved configs, themes and keybinds.</p>
+          <div class="project__info">
+            <h3 class="project__name">Terkan UI</h3>
+            <p class="project__desc">A dark-red interface library for Roblox with themes, configs and keybinds.</p>
+          </div>
+        </article>
+
+        <article class="project project--small project--r3l">
+          <a class="project__media" href="https://github.com/tygovansteenpaalwork-gif/Roblox">
+            <img src="assets/img/mercedes-190sl-1000.jpg" width="1000" height="667" loading="lazy" decoding="async" alt="A black Mercedes-Benz 190 SL with red seats parked on grass.">
+            <ul class="project__tags"><li>Luau</li><li>Scripts</li></ul>
+          </a>
+          <div class="project__info">
+            <h3 class="project__name">Roblox scripts</h3>
+            <p class="project__desc">A collection of Luau scripts, organised per game and reusable features.</p>
+          </div>
+        </article>
+
+        <article class="project project--big project--r3r">
+          <a class="project__media" href="https://github.com/tygovansteenpaalwork-gif/tygovansteenpaalwork-gif">
+            <img src="assets/img/blenheim-1920.jpg" width="1920" height="1280" loading="lazy" decoding="async" alt="Blenheim Palace behind its water terrace and fountain.">
+            <ul class="project__tags"><li>Profile</li><li>GitHub Actions</li></ul>
+          </a>
+          <div class="project__info">
+            <h3 class="project__name">GitHub profile</h3>
+            <p class="project__desc">My GitHub front page, with an automated contribution graph.</p>
+          </div>
         </article>
       </div>
+    </section>
 
-      <!-- Index of everything else: a photo follows the pointer -->
-      <div class="index">
-        <p class="index__label">More projects</p>
-        <ol class="index__list">
-          <li><a href="https://github.com/tygovansteenpaalwork-gif/Roblox" data-peek-src="assets/img/mercedes-190sl-1000.jpg"><span class="index__no">04</span><span class="index__name">Roblox script collection</span><span class="index__kind">Luau</span></a></li>
-          <li><a href="https://github.com/tygovansteenpaalwork-gif/tygovansteenpaalwork-gif" data-peek-src="assets/img/golf-bridge-1000.jpg"><span class="index__no">05</span><span class="index__name">GitHub profile</span><span class="index__kind">Markdown, Actions</span></a></li>
-          <li><a href="https://github.com/tygovansteenpaalwork-gif/Sites" data-peek-src="assets/img/estate-1000.jpg"><span class="index__no">06</span><span class="index__name">This website</span><span class="index__kind">HTML, CSS, JS</span></a></li>
-        </ol>
+    <!-- about-section -->
+    <section class="about" id="about" aria-label="About">
+      <p class="about__text" data-light>Where school meets side projects, I learn by building things that work.</p>
+      <div class="about__foot">
+        <p class="about__note">I'm Tygo. I spend most of my time on programming, cybersecurity and software that makes everyday tasks easier. Every project is public, source included.</p>
+        <a class="underline" href="#contact">LET'S TALK</a>
+      </div>
+      <div class="marquee" aria-label="Tools I use">
+        <div class="marquee__track" data-marquee>
+          <ul><li>Luau</li><li>Python</li><li>TypeScript</li><li>JavaScript</li><li>React</li><li>Three.js</li><li>Tailwind</li><li>Vite</li><li>PHP</li><li>MongoDB</li><li>SQLite</li><li>Figma</li></ul>
+        </div>
       </div>
     </section>
 
-    <!-- Statement with scroll-lit words -->
-    <section class="statement" aria-label="How I work">
-      <p class="statement__text" data-light>I like knowing how things work on the inside. That's why I read code before I trust it, build my own tools when the existing ones fall short, and publish everything so it can be checked.</p>
-      <div class="statement__foot">
-        <p class="statement__note">Open to projects, internships and questions about anything on this page.</p>
-        <a class="link-caps" href="#contact">Let's talk</a>
-      </div>
-    </section>
-
-    <!-- Tool marquee, two rows in opposite directions -->
-    <section class="stack" aria-label="Tools I use">
-      <p class="stack__label">Working with</p>
-      <div class="stack__track" data-marquee>
-        <ul class="stack__row"><li>Luau</li><li>Python</li><li>TypeScript</li><li>JavaScript</li><li>React</li><li>Three.js</li></ul>
-      </div>
-      <div class="stack__track stack__track--rev" data-marquee>
-        <ul class="stack__row"><li>Tailwind CSS</li><li>Vite</li><li>PHP</li><li>MongoDB</li><li>SQLite</li><li>Figma</li></ul>
-      </div>
-    </section>
-
-    <!-- What I do: rows open on hover -->
-    <section class="skills" id="skills" aria-labelledby="skills-title">
-      <h2 class="skills__title" id="skills-title" data-lines><span>What I</span><span>work on</span></h2>
-      <ol class="skills__list">
-        <li><div class="skills__row"><span>Security tooling</span><span>01</span></div><p>Scanners and checks that read code the way an attacker writes it.</p></li>
-        <li><div class="skills__row"><span>Roblox systems in Luau</span><span>02</span></div><p>Game systems, interface libraries and tools for other developers.</p></li>
-        <li><div class="skills__row"><span>Web design and development</span><span>03</span></div><p>Sites and apps with React, TypeScript, Tailwind and Three.js.</p></li>
-        <li><div class="skills__row"><span>Voice assistants and automation</span><span>04</span></div><p>Python tools that talk, listen and take repetitive work off your hands.</p></li>
+    <!-- contribution-section -->
+    <section class="contribute" id="contribute" aria-labelledby="contribute-title">
+      <h2 class="contribute__title" id="contribute-title">Where<br>I Contribute</h2>
+      <ol class="contribute__list">
+        <li><span>Security Tools and Scanners</span><span>01</span></li>
+        <li><span>Roblox Systems in Luau</span><span>02</span></li>
+        <li><span>Web Design and Development</span><span>03</span></li>
+        <li><span>Voice Assistants and Automation</span><span>04</span></li>
       </ol>
     </section>
 
-    <!-- Object scene about me: photograph moves from grey to colour, callouts appear -->
-    <section class="object" aria-labelledby="object-title" data-object data-bg="#1c241d">
-      <div class="object__sticky">
-        <figure class="object__figure" data-object-figure>
-          <img src="assets/img/porsche-interior-1920.jpg" width="1920" height="1283" loading="lazy" decoding="async"
-               alt="The cream steering wheel and round gauges of a Porsche 356 dashboard, seen up close.">
+    <!-- services-section -->
+    <section class="services" aria-labelledby="services-title" data-object data-bg="#1c241d">
+      <div class="services__sticky">
+        <figure class="services__figure" data-object-figure>
+          <img src="assets/img/porsche-interior-1920.jpg" width="1920" height="1283" loading="lazy" decoding="async" alt="The cream steering wheel and round gauges of a Porsche 356 dashboard.">
         </figure>
-        <ul class="object__callouts">
-          <li class="object__callout object__callout--1"><span class="object__box"></span>Grafisch Lyceum<br>Rotterdam, year three</li>
-          <li class="object__callout object__callout--2"><span class="object__box"></span>Online as<br>ZetFire</li>
-          <li class="object__callout object__callout--3"><span class="object__box"></span>Security, Roblox<br>and web</li>
+        <ul class="services__callouts">
+          <li class="callout callout--1"><span class="callout__box"></span>Security tools<br>in Python</li>
+          <li class="callout callout--2"><span class="callout__box"></span>Roblox systems<br>in Luau</li>
+          <li class="callout callout--3"><span class="callout__box"></span>Websites with<br>React and TypeScript</li>
         </ul>
-        <h2 class="object__title" id="object-title" data-light>Eighteen years old, steering my own way into software, one project at a time.</h2>
+        <h2 class="services__title" id="services-title" data-light>In three years at the Grafisch Lyceum, I went from first scripts to security tools and full websites.</h2>
       </div>
     </section>
 
-    <!-- Cards about me -->
-    <section class="beyond" aria-labelledby="beyond-title" data-bg="#2b3226">
-      <div class="beyond__head">
-        <h2 class="beyond__title" id="beyond-title" data-blur>Beyond the code.<br>Always learning.</h2>
-        <p class="beyond__hint">Drag</p>
+    <!-- testimonials-section -->
+    <section class="cards" aria-labelledby="cards-title" data-bg="#2b3226">
+      <div class="cards__head">
+        <h2 class="cards__title" id="cards-title" data-blur>Beyond the code.<br>Always learning.</h2>
+        <a class="underline" href="https://github.com/tygovansteenpaalwork-gif">VIEW GITHUB</a>
       </div>
-      <ul class="beyond__cards" data-drag>
-        <li class="beyond__card"><p class="beyond__top"><span>01</span>School</p><p class="beyond__body">Third year at the Grafisch Lyceum Rotterdam.</p></li>
-        <li class="beyond__card"><p class="beyond__top"><span>02</span>Focus</p><p class="beyond__body">Cybersecurity, and software that makes daily tasks easier.</p></li>
-        <li class="beyond__card"><p class="beyond__top"><span>03</span>How I learn</p><p class="beyond__body">By building real projects and publishing the source.</p></li>
-        <li class="beyond__card"><p class="beyond__top"><span>04</span>Online</p><p class="beyond__body">I go by ZetFire, with a flame for a logo.</p></li>
-        <li class="beyond__card"><p class="beyond__top"><span>05</span>Off hours</p><p class="beyond__body">Gaming, and finding the next thing to learn.</p></li>
+      <ul class="cards__row" data-drag>
+        <li class="card"><div class="card__who"><span class="card__dot"></span><p>School<small>Grafisch Lyceum Rotterdam</small></p></div><p class="card__text">Third-year student at a school for design, media and technology.</p></li>
+        <li class="card"><div class="card__who"><span class="card__dot"></span><p>Focus<small>Cybersecurity</small></p></div><p class="card__text">Reading code the way an attacker writes it, then building the tool that catches it.</p></li>
+        <li class="card"><div class="card__who"><span class="card__dot"></span><p>Method<small>Open source</small></p></div><p class="card__text">Every project is published with its full source, so anyone can check how it works.</p></li>
+        <li class="card"><div class="card__who"><span class="card__dot"></span><p>ZetFire<small>Online name</small></p></div><p class="card__text">The name on my GitHub commits and the flame in my logo.</p></li>
+        <li class="card"><div class="card__who"><span class="card__dot"></span><p>Off hours<small>Rotterdam</small></p></div><p class="card__text">Gaming, and finding the next thing I want to understand.</p></li>
       </ul>
     </section>
 
-    <!-- Closing line and widening photo strip -->
-    <section class="closing" aria-label="Closing" data-bg="#5c5a45">
-      <p class="closing__text" data-light>Good software is trusted before it is understood. I want to be the kind of developer who makes sure that trust holds up when someone finally looks inside.</p>
-      <ul class="closing__strip" data-strip>
+    <!-- journal-section -->
+    <section class="journal" aria-label="Closing" data-bg="#5c5a45">
+      <p class="journal__text" data-light>People trust software before they understand it. I want to build the kind that deserves that trust.</p>
+      <ul class="journal__strip" data-strip>
         <li><img src="assets/img/estate-1000.jpg" width="1000" height="750" loading="lazy" decoding="async" alt="Castle Howard across a wide lawn."></li>
         <li><img src="assets/img/golf-bridge-1000.jpg" width="1000" height="667" loading="lazy" decoding="async" alt="The Swilcan Bridge at St Andrews at sunset."></li>
-        <li><img src="assets/img/mercedes-190sl-1000.jpg" width="1000" height="667" loading="lazy" decoding="async" alt="A black Mercedes-Benz 190 SL parked on grass."></li>
+        <li><img src="assets/img/polo-1000.jpg" width="836" height="1024" loading="lazy" decoding="async" alt="A polo player at full gallop."></li>
         <li><img src="assets/img/avenue-1000.jpg" width="1000" height="464" loading="lazy" decoding="async" alt="The formal garden at Cliveden."></li>
-        <li class="is-open"><img src="assets/img/blenheim-1000.jpg" width="1000" height="667" loading="lazy" decoding="async" alt="Blenheim Palace behind its water terrace and fountain."></li>
+        <li class="is-open"><img src="assets/img/mercedes-300sl-road-1000.jpg" width="1000" height="750" loading="lazy" decoding="async" alt="A silver Mercedes-Benz 300 SL on a country road."><span>Rotterdam</span></li>
       </ul>
     </section>
 
-    <!-- Contact -->
-    <footer class="contact" id="contact" aria-labelledby="contact-title" data-bg="#0e0e0e">
-      <div class="contact__top">
-        <h2 class="contact__title" id="contact-title" data-lines><span>Let's build</span><span>something that lasts.</span></h2>
-        <div class="contact__links">
-          <p class="contact__row"><span>Email</span><a href="mailto:tygovansteenpaalwerk@gmail.com">tygovansteenpaalwerk@gmail.com</a><button type="button" data-copy="tygovansteenpaalwerk@gmail.com">Copy</button></p>
-          <p class="contact__row"><span>GitHub</span><a href="https://github.com/tygovansteenpaalwork-gif">tygovansteenpaalwork-gif</a></p>
-          <p class="contact__row"><span>Local time</span><strong class="contact__time" data-time>Rotterdam</strong></p>
+    <!-- footer -->
+    <footer class="footer" id="contact" data-bg="#0e0e0e">
+      <div class="footer__top">
+        <ul class="footer__nav">
+          <li><a href="#work">[ WORK ]</a></li>
+          <li><a href="#about">[ ABOUT ]</a></li>
+          <li><a href="#contribute">[ SKILLS ]</a></li>
+          <li><a href="https://github.com/tygovansteenpaalwork-gif">[ GITHUB ]</a></li>
+        </ul>
+        <div class="footer__contact">
+          <p class="footer__big">Let's talk.</p>
+          <p class="footer__mono">Projects, internships or a question about something on this page.</p>
+          <p class="footer__mail"><a href="mailto:tygovansteenpaalwerk@gmail.com">tygovansteenpaalwerk@gmail.com</a> <button type="button" data-copy="tygovansteenpaalwerk@gmail.com">[ COPY ]</button></p>
         </div>
+        <figure class="footer__square">
+          <img src="assets/img/golf-bridge-1000.jpg" width="1000" height="667" loading="lazy" decoding="async" alt="">
+          <figcaption>ROTTERDAM, NL</figcaption>
+        </figure>
       </div>
-      <p class="contact__mark" aria-hidden="true">VANSTEENPAAL</p>
-      <div class="contact__foot">
-        <p>&copy; 2026 Tygo Vansteenpaal, Rotterdam</p>
-        <a href="#top" class="contact__up">Back to top</a>
-        <p>Photos: Wikimedia Commons contributors, CC licences. <a href="CREDITS.md">Credits</a></p>
+      <p class="footer__mark" aria-hidden="true">VANSTEENPAAL</p>
+      <div class="footer__bottom">
+        <a href="CREDITS.md">PHOTO CREDITS</a>
+        <a href="https://github.com/tygovansteenpaalwork-gif">GITHUB</a>
+        <p>&copy; 2026 TYGO VANSTEENPAAL. ALL RIGHTS RESERVED.</p>
       </div>
     </footer>
   </main>
