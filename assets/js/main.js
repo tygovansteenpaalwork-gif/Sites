@@ -2,7 +2,6 @@
   const root = document.documentElement;
   document.body.classList.remove('no-js');
 
-  /* Light / dark mode, remembered per visitor. */
   const KEY = 'mode';
   const toggle = document.querySelector('[data-mode-toggle]');
   const systemDark = () => matchMedia('(prefers-color-scheme: dark)').matches;
@@ -12,11 +11,10 @@
   if (toggle) toggle.addEventListener('click', () => {
     const next = current() === 'dark' ? 'light' : 'dark';
     root.dataset.mode = next;
-    try { localStorage.setItem(KEY, next); } catch (e) { /* private window */ }
+    try { localStorage.setItem(KEY, next); } catch (e) {}
     label();
   });
 
-  /* Resizing the window stretches the page sideways; it springs back once resizing stops. */
   const app = document.querySelector('.app');
   if (!app || !('ResizeObserver' in window) || matchMedia('(prefers-reduced-motion: reduce)').matches) return;
   let baseWidth = document.body.getBoundingClientRect().width;
