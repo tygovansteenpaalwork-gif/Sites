@@ -3,253 +3,223 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Tygo Vansteenpaal, catalogue of works</title>
+  <title>Tygo Vansteenpaal</title>
   <meta name="description" content="Tygo Vansteenpaal is a student developer in Rotterdam building security tools, Roblox systems and software for the web.">
-  <meta name="theme-color" content="#f3efe7">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23f3efe7'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-style='italic' font-size='34' text-anchor='middle' fill='%231c1b18'%3ETV%3C/text%3E%3C/svg%3E">
+  <meta name="theme-color" content="#0e0d0b">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%230e0d0b'/%3E%3Ctext x='32' y='43' font-family='Georgia,serif' font-size='30' text-anchor='middle' fill='%23efe9df'%3ETV%3C/text%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/site.css">
-  <link rel="preload" as="image" href="assets/img/moonlight-strandgade-1800.webp" imagesrcset="assets/img/moonlight-strandgade-900.webp 900w, assets/img/moonlight-strandgade-1800.webp 1800w" imagesizes="(min-width: 64em) 58vw, 100vw" type="image/webp">
-  <script>document.documentElement.classList.add('js');</script>
+  <script>document.documentElement.classList.add('js');if(!matchMedia('(prefers-reduced-motion: reduce)').matches)document.documentElement.classList.add('scenes');</script>
   <script src="assets/js/site.js" defer></script>
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
 
-  <header class="masthead" data-masthead>
-    <a class="masthead__name" href="#top" aria-label="Tygo Vansteenpaal, back to top">T. Vansteenpaal</a>
-    <nav class="index" aria-label="Sections">
-      <button class="index__toggle" type="button" aria-expanded="false" aria-controls="index-list" data-index-toggle>
-        <span class="index__toggle-open">Index</span><span class="index__toggle-close">Close</span>
-      </button>
-      <ol class="index__list" id="index-list" data-index-list>
-        <li><a href="#works"><span class="index__no">I</span>Works</a></li>
-        <li><a href="#inventory"><span class="index__no">II</span>Inventory</a></li>
-        <li><a href="#about"><span class="index__no">III</span>About</a></li>
-        <li><a href="#correspondence"><span class="index__no">IV</span>Correspondence</a></li>
-      </ol>
+  <header class="bar" data-bar>
+    <a class="bar__mark" href="#top" aria-label="Tygo Vansteenpaal, back to top">T&mdash;V</a>
+    <nav class="bar__nav" aria-label="Sections">
+      <button class="bar__menu" type="button" aria-expanded="false" aria-controls="nav-list" data-menu>[ Menu ]</button>
+      <ul class="bar__list" id="nav-list" data-nav>
+        <li><a href="#method">[ Method ]</a></li>
+        <li><a href="#works">[ Works ]</a></li>
+        <li><a href="#about">[ About ]</a></li>
+        <li><a href="#contact">[ Contact ]</a></li>
+      </ul>
     </nav>
   </header>
 
   <main id="main">
-    <!-- Title page -->
-    <section class="title" id="top" aria-labelledby="title-heading">
-      <div class="title__head">
-        <p class="label" data-reveal>Catalogue of works, Rotterdam</p>
-        <h1 class="title__name" id="title-heading" data-split>
-          <span>Tygo</span>
-          <span><em>Vansteenpaal</em></span>
-        </h1>
-      </div>
-      <div class="title__text">
-        <p class="title__lede" data-reveal>
-          Student developer. I build security tools, Roblox systems and software
-          for the web.
+
+    <!-- 1. Title: full-width wordmark, statement, mono note -->
+    <section class="intro" id="top" aria-label="Introduction">
+      <h1 class="intro__mark" aria-label="Vansteenpaal">
+        <span class="intro__mark-row"><span data-letters>VANSTEEN</span><span data-letters>PAAL</span></span>
+      </h1>
+      <div class="intro__foot">
+        <p class="intro__line" data-rise>
+          <em>Software</em> BUILT QUIETLY,<br><em>and</em> BUILT TO LAST.
         </p>
-        <dl class="title__meta" data-reveal>
-          <div><dt>Study</dt><dd>Grafisch Lyceum Rotterdam, year three</dd></div>
-          <div><dt>Focus</dt><dd>Programming and cybersecurity</dd></div>
-          <div><dt>Latest</dt><dd><a href="#ember">Ember, a Roblox backdoor scanner</a></dd></div>
+        <p class="intro__note" data-rise>
+          Tygo Vansteenpaal is a student developer in Rotterdam. He builds security tools, Roblox systems
+          and software for the web.
+        </p>
+      </div>
+    </section>
+
+    <!-- 2. Assembly: the painting builds itself from tiles while scrolling -->
+    <section class="assembly" aria-label="Plate: George Stubbs, The Third Duke of Dorset's Hunter" data-assembly>
+      <div class="assembly__stage">
+        <div class="assembly__frame" data-assembly-frame>
+          <div class="assembly__tiles" data-tiles aria-hidden="true"></div>
+          <img class="assembly__image" src="assets/img/hunter-2200.jpg" width="1897" height="1527"
+               alt="A groom in livery holds a bay hunter in an English park, painted by George Stubbs in 1768.">
+          <div class="assembly__over" data-assembly-text>
+            <p class="assembly__lede"><em>Direction,</em><br>TURNED INTO CRAFT.</p>
+            <p class="assembly__word">T&mdash;V</p>
+            <ul class="assembly__tags">
+              <li>Security tools</li>
+              <li>Roblox systems</li>
+              <li>Web</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <p class="assembly__credit">George Stubbs, <cite>The Third Duke of Dorset's Hunter with a Groom and a Dog</cite>, 1768</p>
+    </section>
+
+    <!-- 3. Statement: light room, mixed italic and capitals, portrait rising through -->
+    <section class="essence" aria-labelledby="essence-title">
+      <p class="eyebrow"><em>the</em> ESSENCE <em>of the</em> WORK</p>
+      <h2 class="essence__title" id="essence-title" data-rise>
+        <em>where</em> SECURITY<br><em>meets</em> CRAFTSMANSHIP
+      </h2>
+      <figure class="essence__plate" data-parallax>
+        <img src="assets/img/madame-x-1000.jpg" srcset="assets/img/madame-x-1000.webp 1000w, assets/img/madame-x-2200.webp 1860w" sizes="(min-width: 64em) 26vw, 60vw"
+             width="1000" height="1917" loading="lazy" decoding="async"
+             alt="A woman in a black satin evening gown stands turned to the side, one hand resting on a table.">
+        <figcaption>John Singer Sargent, <cite>Madame X</cite>, 1883&ndash;84</figcaption>
+      </figure>
+      <p class="essence__text" data-rise>
+        Every script in a game runs with the game's full trust. The work is making sure that trust is earned:
+        reading code the way an attacker writes it, and building tools and interfaces that behave exactly as
+        they say.
+      </p>
+    </section>
+
+    <!-- 4. Method: pinned sequence, three images, moving caption -->
+    <section class="method" id="method" aria-labelledby="method-title" data-sequence>
+      <h2 class="visually-hidden" id="method-title">Method: from script, to scan, to safe</h2>
+      <div class="method__stage">
+        <figure class="method__slide is-active" data-slide>
+          <img src="assets/img/northeaster-2200.jpg" width="2200" height="1509" loading="lazy" decoding="async"
+               alt="A heavy wave breaks over dark rocks on the Maine coast.">
+        </figure>
+        <figure class="method__slide" data-slide>
+          <img src="assets/img/curiosity-2200.jpg" width="2200" height="2709" loading="lazy" decoding="async"
+               alt="In a candle-lit room, a woman writes a letter while two others lean in to read every line.">
+        </figure>
+        <figure class="method__slide" data-slide>
+          <img src="assets/img/moonlight-strandgade-2200.jpg" width="2200" height="1757" loading="lazy" decoding="async"
+               alt="A quiet grey room with a tall window; moonlight falls in squares on the floor.">
+        </figure>
+
+        <ol class="method__dots" aria-hidden="true">
+          <li class="is-active" data-dot></li><li data-dot></li><li data-dot></li>
+        </ol>
+
+        <div class="method__steps">
+          <div class="method__step is-active" data-step>
+            <p class="method__no">01 / Script</p>
+            <p>A free model arrives with forty scripts nobody has read. One of them may load code from someone else's account.</p>
+          </div>
+          <div class="method__step" data-step>
+            <p class="method__no">02 / Scan</p>
+            <p>Ember opens the model file and reads every script the way an attacker writes it: hidden IDs, encoded names, code pushed off-screen.</p>
+          </div>
+          <div class="method__step" data-step>
+            <p class="method__no">03 / Safe</p>
+            <p>You publish only what you understand. Anything suspicious is named, located and explained before it reaches a player.</p>
+          </div>
+        </div>
+
+        <p class="method__caption" aria-hidden="true" data-caption>
+          <span><em>From</em> SCRIPT, <em>to</em> SCAN, <em>to</em> SAFE.</span>
+        </p>
+      </div>
+    </section>
+
+    <!-- 5. Works: dark room, large plates, mono tags -->
+    <section class="works" id="works" aria-labelledby="works-title">
+      <div class="works__head">
+        <h2 class="works__title" id="works-title" data-rise>Selected<br><em>works</em></h2>
+        <p class="works__intro" data-rise>Three projects, each built to solve a real problem. All source code is public on GitHub.</p>
+      </div>
+
+      <article class="work work--a" aria-labelledby="w-ember">
+        <a class="work__plate" href="https://github.com/tygovansteenpaalwork-gif/Projects/tree/main/ember" tabindex="-1" aria-hidden="true">
+          <img src="assets/img/chess-players-1000.jpg" srcset="assets/img/chess-players-1000.webp 1000w, assets/img/chess-players-2200.webp 2200w" sizes="(min-width: 64em) 52vw, 100vw"
+               width="1000" height="743" loading="lazy" decoding="async"
+               alt="">
+        </a>
+        <div class="work__meta">
+          <h3 class="work__name" id="w-ember"><a href="https://github.com/tygovansteenpaalwork-gif/Projects/tree/main/ember">Ember</a></h3>
+          <ul class="work__tags"><li>Security</li><li>Python</li><li>CLI</li><li>GitHub Action</li></ul>
+          <p class="work__desc">Finds backdoors in Roblox free models. Reads .rbxm and .rbxl files directly, sees through 15 hiding tricks, and was checked against about 2,800 open-source scripts with zero critical false alarms.</p>
+          <a class="work__link" href="https://github.com/tygovansteenpaalwork-gif/Projects/tree/main/ember">View project</a>
+        </div>
+      </article>
+
+      <article class="work work--b" aria-labelledby="w-jarvis">
+        <a class="work__plate" href="https://github.com/tygovansteenpaalwork-gif/AI_VOICE_JARVIS" tabindex="-1" aria-hidden="true">
+          <img src="assets/img/woman-with-lute-1000.jpg" srcset="assets/img/woman-with-lute-1000.webp 1000w, assets/img/woman-with-lute-2200.webp 2200w" sizes="(min-width: 64em) 34vw, 100vw"
+               width="1000" height="1147" loading="lazy" decoding="async" alt="">
+        </a>
+        <div class="work__meta">
+          <h3 class="work__name" id="w-jarvis"><a href="https://github.com/tygovansteenpaalwork-gif/AI_VOICE_JARVIS">Jarvis</a></h3>
+          <ul class="work__tags"><li>Voice AI</li><li>Python</li><li>ElevenLabs</li></ul>
+          <p class="work__desc">A spoken assistant. It listens through the microphone, answers out loud, and can search the web or save notes to a file during the conversation.</p>
+          <a class="work__link" href="https://github.com/tygovansteenpaalwork-gif/AI_VOICE_JARVIS">View project</a>
+        </div>
+      </article>
+
+      <article class="work work--c" aria-labelledby="w-terkan">
+        <a class="work__plate" href="https://github.com/tygovansteenpaalwork-gif/Roblox_lua_script" tabindex="-1" aria-hidden="true">
+          <img src="assets/img/library-table-1000.jpg" srcset="assets/img/library-table-1000.webp 1000w, assets/img/library-table-2200.webp 2200w" sizes="(min-width: 64em) 40vw, 100vw"
+               width="1000" height="790" loading="lazy" decoding="async" alt="">
+        </a>
+        <div class="work__meta">
+          <h3 class="work__name" id="w-terkan"><a href="https://github.com/tygovansteenpaalwork-gif/Roblox_lua_script">Terkan UI</a></h3>
+          <ul class="work__tags"><li>Interface</li><li>Luau</li><li>Roblox</li></ul>
+          <p class="work__desc">A dark-red interface library for Roblox with fifteen tabs, more than three hundred settings, saved configs, themes and keybinds.</p>
+          <a class="work__link" href="https://github.com/tygovansteenpaalwork-gif/Roblox_lua_script">View project</a>
+        </div>
+      </article>
+    </section>
+
+    <!-- 6. About: light room, statement and inventory -->
+    <section class="about" id="about" aria-labelledby="about-title">
+      <p class="eyebrow"><em>a</em> STUDENT <em>in</em> ROTTERDAM</p>
+      <h2 class="about__title" id="about-title" data-rise>
+        EIGHTEEN, <em>third year at the</em> GRAFISCH LYCEUM ROTTERDAM.
+      </h2>
+      <div class="about__cols">
+        <p class="about__text" data-rise>
+          I am drawn to programming, to cybersecurity, and to software that makes ordinary tasks easier. I learn
+          by building real projects, and I am always looking for ways to learn more. In my free time, I game.
+        </p>
+        <dl class="about__inventory">
+          <div><dt>Languages</dt><dd>Luau, Python, TypeScript, JavaScript, PHP, HTML, CSS</dd></div>
+          <div><dt>Frameworks</dt><dd>React, Three.js, Tailwind CSS, Vite</dd></div>
+          <div><dt>Data</dt><dd>MongoDB, SQLite</dd></div>
+          <div><dt>Design</dt><dd>Figma, Canva</dd></div>
         </dl>
       </div>
-      <figure class="plate plate--title" data-plate>
-        <div class="plate__frame">
-          <picture>
-            <source type="image/webp" srcset="assets/img/moonlight-strandgade-900.webp 900w, assets/img/moonlight-strandgade-1800.webp 1800w" sizes="(min-width: 64em) 58vw, 100vw">
-            <img src="assets/img/moonlight-strandgade-1800.jpg" width="1800" height="1437" alt="A quiet grey room with a tall window and a closed white door; moonlight falls in squares on the wooden floor." fetchpriority="high">
-          </picture>
-        </div>
-        <figcaption><span class="plate__no">Pl. I</span> Vilhelm Hammershøi, <cite>Moonlight, Strandgade 30</cite>, 1900–1906</figcaption>
-      </figure>
     </section>
 
-    <!-- Works -->
-    <section class="works" id="works" aria-labelledby="works-heading">
-      <header class="section-head">
-        <p class="label"><span class="label__no">I</span>Works</p>
-        <h2 id="works-heading" data-split><span>Three pieces,</span> <span><em>catalogued</em></span></h2>
-      </header>
-
-      <!-- Lot 01: Ember -->
-      <article class="lot lot--feature" id="ember" aria-labelledby="ember-title">
-        <figure class="plate lot__plate" data-plate>
-          <div class="plate__frame">
-            <picture>
-              <source type="image/webp" srcset="assets/img/chess-players-900.webp 900w, assets/img/chess-players-1800.webp 1800w" sizes="(min-width: 64em) 55vw, 100vw">
-              <img src="assets/img/chess-players-1800.jpg" width="1800" height="1337" loading="lazy" decoding="async" alt="Two men lean over a chess board in a dark, wood-panelled parlour while an older man stands behind them and watches.">
-            </picture>
-          </div>
-          <figcaption><span class="plate__no">Pl. II</span> Thomas Eakins, <cite>The Chess Players</cite>, 1876</figcaption>
-        </figure>
-        <div class="lot__body">
-          <p class="lot__no">No. 01</p>
-          <h3 class="lot__title" id="ember-title">Ember</h3>
-          <p class="lot__kind">Security tool, Python</p>
-          <p class="lot__text">
-            Free models on Roblox sometimes hide a script that loads code from someone else's account and takes over
-            the game server. Ember opens <code>.rbxm</code> and <code>.rbxl</code> files directly, pulls out every
-            script, and reads each one the way an attacker writes it: IDs hidden in arithmetic, names spelled with
-            <code>string.char</code>, code pushed two hundred columns off-screen.
-          </p>
-          <dl class="lot__facts">
-            <div><dt>Rules</dt><dd>15 detections, from remote <code>require</code> to disguised script names</dd></div>
-            <div><dt>Reads</dt><dd>Binary and XML model and place files, no Roblox Studio needed</dd></div>
-            <div><dt>Checked</dt><dd>About 2,800 open-source Roblox scripts, zero critical false alarms</dd></div>
-            <div><dt>Ships as</dt><dd>Command line tool, Python library and GitHub Action</dd></div>
-          </dl>
-          <a class="action" href="https://github.com/tygovansteenpaalwork-gif/Projects/tree/main/ember">
-            <span>View the source of Ember</span><span class="action__rule" aria-hidden="true"></span>
-          </a>
-        </div>
-      </article>
-
-      <!-- Lot 02: Jarvis -->
-      <article class="lot lot--left" id="jarvis" aria-labelledby="jarvis-title">
-        <figure class="plate lot__plate" data-plate>
-          <div class="plate__frame">
-            <picture>
-              <source type="image/webp" srcset="assets/img/woman-with-lute-900.webp 900w, assets/img/woman-with-lute-1800.webp 1800w" sizes="(min-width: 64em) 38vw, 100vw">
-              <img src="assets/img/woman-with-lute-1800.jpg" width="1800" height="2065" loading="lazy" decoding="async" alt="A young woman tunes a lute by a window, turned towards the light as if listening.">
-            </picture>
-          </div>
-          <figcaption><span class="plate__no">Pl. III</span> Johannes Vermeer, <cite>Young Woman with a Lute</cite>, ca. 1662–63</figcaption>
-        </figure>
-        <div class="lot__body">
-          <p class="lot__no">No. 02</p>
-          <h3 class="lot__title" id="jarvis-title">Jarvis</h3>
-          <p class="lot__kind">Voice assistant, Python</p>
-          <p class="lot__text">
-            A spoken assistant built on ElevenLabs Conversational AI. It listens through the microphone, answers out
-            loud, and can act during the conversation: search the web through DuckDuckGo or write what it hears to a
-            file. A small, readable example of wiring tool calls into a voice workflow.
-          </p>
-          <a class="action" href="https://github.com/tygovansteenpaalwork-gif/AI_VOICE_JARVIS">
-            <span>View the source of Jarvis</span><span class="action__rule" aria-hidden="true"></span>
-          </a>
-        </div>
-      </article>
-
-      <!-- Lot 03: Terkan UI -->
-      <article class="lot lot--right" id="terkan" aria-labelledby="terkan-title">
-        <figure class="plate lot__plate" data-plate>
-          <div class="plate__frame">
-            <picture>
-              <source type="image/webp" srcset="assets/img/library-table-900.webp 900w, assets/img/library-table-1800.webp 1800w" sizes="(min-width: 64em) 38vw, 100vw">
-              <img src="assets/img/library-table-1800.jpg" width="1800" height="1422" loading="lazy" decoding="async" alt="A carved rosewood library table with inlaid panels and heavy scrolled legs, photographed against a plain grey background.">
-            </picture>
-          </div>
-          <figcaption><span class="plate__no">Pl. IV</span> Herter Brothers, <cite>Library Table</cite>, 1879–82</figcaption>
-        </figure>
-        <div class="lot__body">
-          <p class="lot__no">No. 03</p>
-          <h3 class="lot__title" id="terkan-title">Terkan UI</h3>
-          <p class="lot__kind">Interface library, Luau</p>
-          <p class="lot__text">
-            A dark-red interface library for Roblox, and the hub built on top of it: fifteen tabs and more than three
-            hundred settings, with saved configs, themes and keybinds. Configs load in a fixed order so no feature
-            switches on before its settings are in place.
-          </p>
-          <a class="action" href="https://github.com/tygovansteenpaalwork-gif/Roblox_lua_script">
-            <span>View the source of Terkan UI</span><span class="action__rule" aria-hidden="true"></span>
-          </a>
-        </div>
-      </article>
-    </section>
-
-    <!-- Inventory -->
-    <section class="inventory" id="inventory" aria-labelledby="inventory-heading">
-      <header class="section-head">
-        <p class="label"><span class="label__no">II</span>Inventory</p>
-        <h2 id="inventory-heading" data-split><span>What I work <em>with</em></span></h2>
-      </header>
-      <div class="inventory__lists">
-        <section class="inventory__group" aria-labelledby="inv-lang">
-          <h3 id="inv-lang">Languages</h3>
-          <ul>
-            <li><span>Luau</span><span class="inventory__note">Roblox systems</span></li>
-            <li><span>Python</span><span class="inventory__note">Tools and automation</span></li>
-            <li><span>TypeScript</span><span class="inventory__note">Web applications</span></li>
-            <li><span>JavaScript</span><span class="inventory__note">Web</span></li>
-            <li><span>PHP</span><span class="inventory__note">Server side</span></li>
-            <li><span>HTML and CSS</span><span class="inventory__note">Everything visible</span></li>
-          </ul>
-        </section>
-        <section class="inventory__group" aria-labelledby="inv-tools">
-          <h3 id="inv-tools">Frameworks and tools</h3>
-          <ul>
-            <li><span>React</span></li>
-            <li><span>Three.js</span></li>
-            <li><span>Tailwind CSS</span></li>
-            <li><span>Vite</span></li>
-            <li><span>npm</span></li>
-          </ul>
-        </section>
-        <section class="inventory__group" aria-labelledby="inv-data">
-          <h3 id="inv-data">Data and design</h3>
-          <ul>
-            <li><span>MongoDB</span></li>
-            <li><span>SQLite</span></li>
-            <li><span>Figma</span></li>
-            <li><span>Canva</span></li>
-          </ul>
-        </section>
-      </div>
-    </section>
-
-    <!-- About -->
-    <section class="about" id="about" aria-labelledby="about-heading">
-      <header class="section-head">
-        <p class="label"><span class="label__no">III</span>About</p>
-        <h2 id="about-heading" class="visually-hidden">About Tygo</h2>
-      </header>
-      <div class="about__text">
-        <p class="about__lead" data-reveal>
-          I am eighteen and in my third year at the <em>Grafisch Lyceum Rotterdam</em>. I am drawn to programming,
-          to cybersecurity, and to software that makes ordinary tasks a little easier.
-        </p>
-        <p data-reveal>
-          I am always looking for ways to learn more, and right now that means building real projects: a backdoor
-          scanner, a voice assistant, an interface library. In my free time, I game.
-        </p>
-      </div>
-    </section>
-
-    <!-- Correspondence -->
-    <section class="correspondence" id="correspondence" aria-labelledby="corr-heading">
-      <figure class="plate plate--corr" data-plate>
-        <div class="plate__frame">
-          <picture>
-            <source type="image/webp" srcset="assets/img/curiosity-900.webp 900w, assets/img/curiosity-1800.webp 1800w" sizes="(min-width: 64em) 36vw, 100vw">
-            <img src="assets/img/curiosity-1800.jpg" width="1800" height="2216" loading="lazy" decoding="async" alt="In a candle-lit room, a woman writes a letter at a table while two others lean in to read it.">
-          </picture>
-        </div>
-        <figcaption><span class="plate__no">Pl. V</span> Gerard ter Borch, <cite>Curiosity</cite>, ca. 1660–62</figcaption>
-      </figure>
-      <div class="correspondence__body">
-        <p class="label"><span class="label__no">IV</span>Correspondence</p>
-        <h2 id="corr-heading" data-split><span>Write to me</span></h2>
-        <p class="correspondence__text">For projects, internships or a question about something on this page.</p>
-        <ul class="correspondence__links">
+    <!-- 7. Contact and giant wordmark footer -->
+    <section class="contact" id="contact" aria-labelledby="contact-title">
+      <div class="contact__grid">
+        <h2 class="contact__title" id="contact-title" data-rise><em>Start a</em><br>CONVERSATION</h2>
+        <ul class="contact__list">
           <li>
-            <span class="correspondence__kind">Email</span>
+            <span class="contact__kind">Email</span>
             <a href="mailto:tygovansteenpaalwerk@gmail.com">tygovansteenpaalwerk@<wbr>gmail.com</a>
-            <button class="copy" type="button" data-copy="tygovansteenpaalwerk@gmail.com" aria-live="polite">Copy address</button>
+            <button class="contact__copy" type="button" data-copy="tygovansteenpaalwerk@gmail.com">Copy</button>
           </li>
           <li>
-            <span class="correspondence__kind">GitHub</span>
+            <span class="contact__kind">GitHub</span>
             <a href="https://github.com/tygovansteenpaalwork-gif">tygovansteenpaalwork-gif</a>
           </li>
         </ul>
       </div>
+      <p class="contact__mark" aria-hidden="true">VANSTEENPAAL</p>
+      <footer class="contact__foot">
+        <p>&copy; 2026 Tygo Vansteenpaal, Rotterdam</p>
+        <p>Paintings: The Metropolitan Museum of Art, public domain. <a href="CREDITS.md">Credits</a></p>
+      </footer>
     </section>
   </main>
-
-  <footer class="colophon">
-    <p>Set in EB Garamond and IBM Plex Mono.</p>
-    <p>Plates from <a href="https://www.metmuseum.org/about-the-met/policies-and-documents/open-access">The Metropolitan Museum of Art Open Access</a>, public domain. See <a href="CREDITS.md">credits</a>.</p>
-    <p>Tygo Vansteenpaal, Rotterdam</p>
-  </footer>
 </body>
 </html>
