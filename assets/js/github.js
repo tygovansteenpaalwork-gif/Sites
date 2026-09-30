@@ -1,9 +1,6 @@
-/* Fills the Work page and the About lists from the public GitHub repositories of USER.
-   The HTML already holds a saved copy, so the page still works when the API is unreachable
-   or rate limited (60 requests per hour per visitor); results are cached for 30 minutes. */
 (() => {
   const USER = 'tygovansteenpaalwork-gif';
-  const HIDE = [];                       // repository names to leave off the site
+  const HIDE = [];
   const CACHE_KEY = 'gh-repos';
   const CACHE_MS = 30 * 60 * 1000;
 
@@ -14,7 +11,7 @@
     Roblox: 'Roblox scripts',
     Sites: 'Portfolio',
   };
-  // Used only while a repository has no description on GitHub.
+
   const NOTES = {
     Projects: 'Home of Ember, which finds backdoors hidden in Roblox free models by reading the model file itself.',
     AI_VOICE_JARVIS: 'A voice assistant that listens, talks back and can search the web.',
@@ -97,7 +94,7 @@
     .then((repos) => {
       const slim = repos.map(({ name, description, html_url, homepage, language, stargazers_count, pushed_at, fork, archived, private: p }) =>
         ({ name, description, html_url, homepage, language, stargazers_count, pushed_at, fork, archived, private: p }));
-      try { localStorage.setItem(CACHE_KEY, JSON.stringify({ t: Date.now(), repos: slim })); } catch (e) { /* storage off */ }
+      try { localStorage.setItem(CACHE_KEY, JSON.stringify({ t: Date.now(), repos: slim })); } catch (e) {}
       render(slim);
     })
     .catch(() => { if (cached) render(cached.repos); });
