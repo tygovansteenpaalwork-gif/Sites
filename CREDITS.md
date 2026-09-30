@@ -19,5 +19,10 @@ as each original.
 | `assets/img/porsche-interior-*` | Porsche 356 A Speedster 1600 Super 1X7A7865 | Alexander Migl | CC BY-SA 4.0 | https://commons.wikimedia.org/w/index.php?curid=67853706 |
 | `assets/img/blenheim-*` | Blenheim Palace from the Water Terraces October 2016 | DeFacto | CC BY-SA 4.0 | https://commons.wikimedia.org/w/index.php?curid=52165842 |
 
-Fonts: [Onest](https://fonts.google.com/specimen/Onest) and [DM Mono](https://fonts.google.com/specimen/DM+Mono),
-both SIL Open Font License, served by Google Fonts.
+The paper texture in `assets/img/paper/` is generated for this site. The ZetFire logo is Tygo's own.
+
+Fonts: [IM Fell DW Pica SC](https://fonts.google.com/specimen/IM+Fell+DW+Pica+SC), [IM Fell English](https://fonts.google.com/specimen/IM+Fell+English)
+and [Alegreya SC](https://fonts.google.com/specimen/Alegreya+SC) for v. II; [Onest](https://fonts.google.com/specimen/Onest) and
+[DM Mono](https://fonts.google.com/specimen/DM+Mono) for v. I. All SIL Open Font License, served by Google Fonts.
+
+Layout of v. II follows [lynnandtonic.com](https://lynnandtonic.com) by Lynn Fisher.
