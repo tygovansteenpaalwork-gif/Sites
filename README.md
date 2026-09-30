@@ -1,9 +1,9 @@
 # Sites
 
-Personal portfolio of Tygo Vansteenpaal, set as a catalogue of works.
+Personal portfolio of Tygo Vansteenpaal (ZetFire). Static HTML and CSS, no build step.
 
-- `index.html`, `assets/css/site.css`, `assets/js/site.js`: static site, no build step
-- `assets/img/`: public-domain paintings from The Met Open Access, see `CREDITS.md`
-- `.claude/skills/design-skill/`: the design rules this site follows
+- `index.html`, `about/`, `work/`, `credits/`: the pages; styles in `assets/css/main.css`, script in `assets/js/main.js`
+- `assets/js/github.js`: fills Work and the About lists from the public GitHub repositories, so new projects appear by themselves. Edit `HIDE`, `NAMES` or `NOTES` at the top to hide or rename a repository.
+- `assets/img/`: photos with their licences in `CREDITS.md`, plus a generated paper texture
 
 Open `index.html` in a browser, or serve the folder with any static host (GitHub Pages works as is).
